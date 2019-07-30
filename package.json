@@ -1,0 +1,24 @@
+{
+  "name": "modern-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mj-linane/Modern-Javascript.git"
+  },
+  "author": "MJ Linane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mj-linane/Modern-Javascript/issues"
+  },
+  "homepage": "https://github.com/mj-linane/Modern-Javascript#readme",
+  "dependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
