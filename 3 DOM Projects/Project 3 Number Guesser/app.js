@@ -23,6 +23,7 @@ const min = 1;
 const max = 5;
 const winningNum = getRandomInt(max);
 let guessesLeft = 3;
+let replay = false;
 
 console.log(winningNum);
 
@@ -41,48 +42,49 @@ UImaxNum.textContent = max;
 // Play again event listener
 // Need to add in a if true check to make sure that the element
 // loads before we put a addEventListener on it
-UIgame.addEventListener('click', function (e){
-  
-}
 
 // Listen for guess
 UIguessButton.addEventListener('click', function () {
-  const guess = parseInt(UIguessInput.value, 10);
-
-  // Validate to make sure it goes in between the min and max
-  // Use function isNaN() to check if it is a not a number
-  if (isNaN(guess) || guess < min || guess > max) {
-    // Add warning text and form
-    UImessage.classList.add('uk-text-danger');
-    UIguessInput.classList.add('uk-form-danger');
-    setMessage(`Please enter a number between ${min} and ${max}`);
-
-
-  // Check guess if correct
-  } else if (guess === winningNum) {
-    // Game over - won
-    gameOver(true, `${guess} is correct, YOU WIN!`);
+  if (replay == true) {
+    window.location.reload();
   } else {
-    // Wrong number, subtract 1
-    guessesLeft -= 1;
-    if (guessesLeft === 0) {
-      // Game over - lost
-      gameOver(false, `You have lost, the correct number was ${winningNum}`);
-    } else {
-      // Game continues - answer wrong
-      // Add warning text color
-      UImessage.classList.remove('uk-text-success');
-      UImessage.classList.add('uk-text-danger');
-      // Add warning text color
-      UIguessInput.classList.remove('uk-form-success');
-      UIguessInput.classList.add('uk-form-danger');
+    const guess = parseInt(UIguessInput.value, 10);
 
-      // Clear input
-      UIguessInput.value = '';
-      // Tell user its the wront number
-      setMessage(
-        `${guess} was not correct, you have ${guessesLeft} guesses remaining.`
-      );
+    // Validate to make sure it goes in between the min and max
+    // Use function isNaN() to check if it is a not a number
+    if (isNaN(guess) || guess < min || guess > max) {
+      // Add warning text and form
+      UImessage.classList.add('uk-text-danger');
+      UIguessInput.classList.add('uk-form-danger');
+      setMessage(`Please enter a number between ${min} and ${max}`);
+
+
+      // Check guess if correct
+    } else if (guess === winningNum) {
+      // Game over - won
+      gameOver(true, `${guess} is correct, YOU WIN!`);
+    } else {
+      // Wrong number, subtract 1
+      guessesLeft -= 1;
+      if (guessesLeft === 0) {
+        // Game over - lost
+        gameOver(false, `You have lost, the correct number was ${winningNum}`);
+      } else {
+        // Game continues - answer wrong
+        // Add warning text color
+        UImessage.classList.remove('uk-text-success');
+        UImessage.classList.add('uk-text-danger');
+        // Add warning text color
+        UIguessInput.classList.remove('uk-form-success');
+        UIguessInput.classList.add('uk-form-danger');
+
+        // Clear input
+        UIguessInput.value = '';
+        // Tell user its the wront number
+        setMessage(
+          `${guess} was not correct, you have ${guessesLeft} guesses remaining.`
+        );
+      }
     }
   }
 });
@@ -112,7 +114,7 @@ function gameOver(won, message) {
 
   // Set submit button to 'play again'
   UIguessButton.value = 'Play Again';
-  UIguessButton.className += ' ' + 'play-again';
+  replay = true;
 }
 
 // Set Message
