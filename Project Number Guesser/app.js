@@ -14,6 +14,7 @@ const min = 1;
 const max = 5;
 const winningNum = getRandomInt(max);
 let guessesLeft = 3;
+let replay = false
 
 // UI Elements
 const UIgame = document.querySelector('#game');
