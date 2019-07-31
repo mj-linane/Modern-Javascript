@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-concat */
 /* eslint-disable comma-dangle */
 /* eslint-disable eqeqeq */
 /* eslint-disable no-restricted-globals */
@@ -36,6 +37,13 @@ const UImessage = document.querySelector('.message');
 // Assign UI Min and Max
 UIminNum.textContent = min;
 UImaxNum.textContent = max;
+
+// Play again event listener
+// Need to add in a if true check to make sure that the element
+// loads before we put a addEventListener on it
+UIgame.addEventListener('click', function (e){
+  
+}
 
 // Listen for guess
 UIguessButton.addEventListener('click', function () {
@@ -103,6 +111,8 @@ function gameOver(won, message) {
   setMessage(message);
 
   // Set submit button to 'play again'
+  UIguessButton.value = 'Play Again';
+  UIguessButton.className += ' ' + 'play-again';
 }
 
 // Set Message
@@ -110,7 +120,7 @@ function setMessage(displayMessage) {
   UImessage.textContent = displayMessage;
 }
 
-// Get random integer
+// Get random winning number
 function getRandomInt(maxnum) {
   return Math.floor(Math.random() * Math.floor(maxnum) + 1);
 }
