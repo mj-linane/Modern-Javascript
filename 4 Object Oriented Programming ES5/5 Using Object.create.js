@@ -2,18 +2,15 @@
 /* eslint-disable no-new-object */
 /* eslint-disable no-array-constructor */
 /* eslint-disable no-new-func */
-/* eslint-disable no-unused-vars */
-/* eslint-disable func-names */
 /* eslint-disable no-new-wrappers */
-/* eslint-disable no-console */
 
 const personPrototypes = {
-  greeting: function () {
+  greeting: function() {
     return `Hello there ${this.firstName} ${this.lastName}`;
   },
-  getsMarried: function (newLastName) {
+  getsMarried: function(newLastName) {
     this.lastName = newLastName;
-  },
+  }
 };
 
 // Method #1 for creating new objects
@@ -31,7 +28,7 @@ console.log(mary.greeting());
 const mj = Object.create(personPrototypes, {
   firstName: { value: 'MJ' },
   lastName: { value: 'Linane' },
-  age: { value: 34 },
+  age: { value: 34 }
 });
 
 console.log(mj); // Outputs an object
