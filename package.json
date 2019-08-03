@@ -1,8 +1,8 @@
 {
   "name": "modern-javascript",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Completed projects for the Modern Javascript course on Udemy",
+  "main": "README.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,14 +11,24 @@
     "url": "git+https://github.com/mj-linane/Modern-Javascript.git"
   },
   "author": "MJ Linane",
-  "license": "ISC",
+  "license": "All Rights Reserved",
   "bugs": {
     "url": "https://github.com/mj-linane/Modern-Javascript/issues"
   },
   "homepage": "https://github.com/mj-linane/Modern-Javascript#readme",
   "dependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-config-airbnb-base": "^13.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2"
   }
 }
