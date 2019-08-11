@@ -4,25 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Data from External API & Chuck Norris</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
     />
-    <title>Data from External API & Chuck Norris</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <h2>Chuck Norris Joke Generator</h2>
+      <h2 class="title">Chuck Norris Joke Generator</h2>
       <form>
-        <div>
-          <label for="number">Number of Jokes</label>
-          <input type="number" id="number" />
+        <div class="field">
+          <label class="label" for="number">Number of Jokes</label>
+          <div class="control">
+            <input class="input" type="number" id="number" />
+          </div>
         </div>
-        <div>
-          <button class="get-jokes">Get Jokes</button>
+        <div class="control">
+          <button id="get-jokes" class="button is-primary">Get Jokes</button>
         </div>
       </form>
-      <ol class="jokes"></ol>
+      <div class="content">
+        <ol class="jokes" type="1"></ol>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

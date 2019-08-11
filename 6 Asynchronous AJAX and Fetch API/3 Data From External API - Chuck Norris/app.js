@@ -1,5 +1,5 @@
 /* eslint-disable no-use-before-define */
-document.querySelector('.get-jokes').addEventListener('click', getJokes);
+document.getElementById('get-jokes').addEventListener('click', getJokes);
 
 function getJokes(e) {
   const number = document.querySelector('input[type="number"]').value;
