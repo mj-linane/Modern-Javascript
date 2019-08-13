@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Data from External API & Chuck Norris</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Chuck Norris Joke Generator</h2>
+      <form>
+        <div class="field">
+          <label class="label" for="number">Number of Jokes</label>
+          <div class="control">
+            <input class="input" type="number" id="number" />
+          </div>
+        </div>
+        <div class="control">
+          <button id="get-jokes" class="button is-primary">Get Jokes</button>
+        </div>
+      </form>
+      <div class="content">
+        <ol class="jokes" type="1"></ol>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

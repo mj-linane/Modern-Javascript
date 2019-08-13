@@ -3,8 +3,7 @@
 // which you initialize using 'new Promise()'
 const done = true;
 
-const isItDoneYet = new
-Promise((resolve, reject) => {
+const isItDoneYet = new Promise((resolve, reject) => {
   if (done) {
     const workDone = 'Here is the thing I built';
     resolve(workDone);
@@ -14,16 +13,15 @@ Promise((resolve, reject) => {
   }
 });
 
-
 // Consuming A Promise
 const checkIsItDoneYet = () => {
   isItDoneYet
-      .then((ok) => {
-        console.log(ok);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+    .then(ok => {
+      console.log(ok);
+    })
+    .catch(err => {
+      console.error(err);
+    });
 };
 
 checkIsItDoneYet();
