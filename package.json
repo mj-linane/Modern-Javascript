@@ -4,7 +4,7 @@
   "description": "Completed projects for the Modern Javascript course on Udemy",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": " "
   },
   "repository": {
     "type": "git",
@@ -17,19 +17,19 @@
   },
   "homepage": "https://github.com/mj-linane/Modern-Javascript#readme",
   "dependencies": {
-    "bulma": "^0.7.5",
+    "css": "^2.2.4",
     "eslint-config-airbnb-base": "^13.2.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-node": "^4.0.0",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.15.1",
     "prettier": "^1.18.2"
   }
 }

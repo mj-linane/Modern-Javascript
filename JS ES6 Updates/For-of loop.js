@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-unused-vars */
 // iterate over the value
 for (const v of ['a', 'b', 'c']) {

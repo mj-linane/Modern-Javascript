@@ -43,10 +43,8 @@ function getJson() {
 function getApi() {
   // fetch responds with a promise
   fetch('https://api.github.com/users')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
+    .then(response => response.json())
+    .then(data => {
       console.log(data);
       let output = '';
       data.forEach(function(user) {
@@ -54,7 +52,5 @@ function getApi() {
       });
       document.getElementById('output').innerHTML = output;
     })
-    .catch(function(error) {
-      console.log(error);
-    });
+    .catch(error => console.log(error));
 }
