@@ -1,16 +1,18 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable require-jsdoc */
 class Person {
   constructor(name) {
-    this._name = name;
+    this.name = name;
   }
 
   // Set the variable
   set name(value) {
-    this.name= value;
+    this.name = value;
   }
+
   // Get the variable
   get name() {
-    return this._name;
+    return this.name;
   }
 }
 
@@ -19,4 +21,3 @@ class Person {
 
 // If you only have a setter, you can chance the value
 // but not access it from the outside
-
