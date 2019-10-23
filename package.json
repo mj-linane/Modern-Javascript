@@ -1,7 +1,7 @@
 {
   "name": "modern-javascript",
   "version": "1.0.0",
-  "description": "Completed projects for the Modern Javascript course on Udemy",
+  "description": "Javascript Example Projects",
   "main": "README.md",
   "scripts": {
     "build": " "
