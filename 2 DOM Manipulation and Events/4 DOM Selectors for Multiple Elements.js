@@ -52,7 +52,7 @@ liOdd.forEach(function(li, index) {
   li.style.background = 'gray';
 });
 // Can do the same with a for loop. Can use length on an HTML collection
-for (let i = 0; i < liEven.length; i++) {
+for (let i = 0; i < liEven.length; i += 1) {
   liEven[i].style.background = '#333333';
 }
 console.log(items);

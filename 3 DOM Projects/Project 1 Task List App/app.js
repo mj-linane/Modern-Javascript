@@ -46,7 +46,7 @@ function getTasks() {
     tasks = JSON.parse(localStorage.getItem('tasks'));
   }
 
-  tasks.forEach((task) => {
+  tasks.forEach(task => {
     // Create task li element
     const li = document.createElement('li');
 
@@ -185,7 +185,7 @@ function filterTasks(e) {
   const text = e.target.value.toLowerCase();
   // Query selector all returns a node list that we can
   // run a for each loop on
-  document.querySelectorAll('.collection-item').forEach((task) => {
+  document.querySelectorAll('.collection-item').forEach(task => {
     const item = task.firstChild.textContent;
     // Searches all items, if no match, it will equal -1
     if (item.toLowerCase().indexOf(text) !== -1) {

@@ -5,7 +5,7 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable require-jsdoc */
 // Listen for submit
-document.getElementById('loan-form').addEventListener('submit', function (e) {
+document.getElementById('loan-form').addEventListener('submit', function(e) {
   // Hide results
   // Hide Results After Calculation
   document.getElementById('results').style.display = 'none';

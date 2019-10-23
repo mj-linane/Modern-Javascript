@@ -44,7 +44,7 @@ UImaxNum.textContent = max;
 // loads before we put a addEventListener on it
 
 // Listen for guess
-UIguessButton.addEventListener('click', function () {
+UIguessButton.addEventListener('click', function() {
   if (replay == true) {
     window.location.reload();
   } else {
@@ -57,7 +57,6 @@ UIguessButton.addEventListener('click', function () {
       UImessage.classList.add('uk-text-danger');
       UIguessInput.classList.add('uk-form-danger');
       setMessage(`Please enter a number between ${min} and ${max}`);
-
 
       // Check guess if correct
     } else if (guess === winningNum) {

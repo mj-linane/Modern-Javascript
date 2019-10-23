@@ -25,7 +25,6 @@ document.getElementById('task-title').innerText = 'My Tasks';
 document.getElementById('task-title').innerHTML =
   '<span style"color:red">Task List</span>';
 
-
 // Document.querySelector() -- Newer and much more powerful
 // Don't have to select by Id, can put in any CSS selector
 console.log(document.querySelector('#task-title'));
