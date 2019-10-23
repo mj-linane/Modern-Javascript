@@ -21,7 +21,7 @@ function Person(firstName, lastName, dob) {
 }
 
 // Calculate age moved into the prototype by adding it below into the person constructor
-Person.prototype.calculateAge = function () {
+Person.prototype.calculateAge = function() {
   const diff = Date.now() - this.birthday.getTime();
   const ageDate = new Date(diff);
   // Gets year in the UTC format. Odd but is used to calculate age from birthdate.
@@ -29,12 +29,12 @@ Person.prototype.calculateAge = function () {
 };
 
 // Get full name
-Person.prototype.getFullName = function () {
+Person.prototype.getFullName = function() {
   return `${this.firstName} ${this.lastName}`;
 };
 
 // Gets Married
-Person.prototype.getsMarried = function (newLastName) {
+Person.prototype.getsMarried = function(newLastName) {
   this.lastName = newLastName;
 };
 

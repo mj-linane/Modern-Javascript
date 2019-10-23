@@ -13,7 +13,7 @@ function Person(firstName, lastName) {
 }
 
 // Greeting
-Person.prototype.greeting = function () {
+Person.prototype.greeting = function() {
   return `Hello there ${this.firstName} ${this.lastName}
   `;
 };
@@ -43,6 +43,6 @@ const customer1 = new Customer('Tom', 'Smith', '555-555-5555', 'Standard');
 console.log(customer1);
 
 // Greet Customer
-Customer.prototype.greeting = function () {
+Customer.prototype.greeting = function() {
   return `Hello there ${this.firstName} ${this.lastName}`;
 };

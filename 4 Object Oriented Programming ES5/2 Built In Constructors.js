@@ -30,7 +30,7 @@ const bool1 = true;
 const bool2 = new Boolean(true);
 
 // Function Constructors
-const getSum1 = function (x, y) {
+const getSum1 = function(x, y) {
   return x + y;
 };
 
@@ -39,7 +39,7 @@ console.log(getSum2('1', '1'));
 
 // Object Constructors
 const John1 = {
-  name: 'John',
+  name: 'John'
 };
 
 const John2 = new Object({ name: 'John' });
