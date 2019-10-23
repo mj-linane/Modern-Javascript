@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 // // DOM Selectors for Multiple Elements
 // // document.getElementsByClassName
 
